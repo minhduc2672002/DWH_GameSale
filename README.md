@@ -36,4 +36,18 @@ region_sales(region_id, game_platform_id, num_sales)
 ```
 ![Stage](https://github.com/minhduc2672002/DWH_GameSale/assets/133132824/2a45579d-3e95-4b2e-88ba-3e3e8cb7bfd4)
 
+### 2.2 Thiết kế Warehouse
+```
+Dim:
+DimRegion: Dim về khu vực/thị trường bán game
+DimGerne: Dim về thể loại game
+DimPublisher: Dim về nhà phát hành
+DimPlatform: Dim về nền tảng phát triển
+DimGame: Dim về game
+DimYear: Dim về năm phát hành
 
+Có 1 fact:
+Fact doanh thu = sum(num_sales) group by (id DimRegion, id DimGerne, id DimPublisher, id DimPlatform, id DimGame, id DimYear)
+
+```
+![DWH](https://github.com/minhduc2672002/DWH_GameSale/assets/133132824/75962bd7-e0df-47a1-984f-aa5950a983f4)
