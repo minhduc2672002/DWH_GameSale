@@ -51,3 +51,5 @@ Fact doanh thu = sum(num_sales) group by (id DimRegion, id DimGerne, id DimPubli
 
 ```
 ![DWH](https://github.com/minhduc2672002/DWH_GameSale/assets/133132824/75962bd7-e0df-47a1-984f-aa5950a983f4)
+
+*Các bước tiếp theo bao gồm ETL, Phân tích, Tạo báo cáo bằng BI vui lòng xem đầy đủ ở file Word ở mục Report xin cảm ơn!*
